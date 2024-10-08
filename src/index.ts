@@ -7,8 +7,9 @@ app.get('/', (c) => {
 });
 
 app.get('/json', (c) => {
+  const name = c.req.query('name') || 'Json';
   return c.json({
-    'message': 'Hello Json!'
+    'message': `Hello ${name}!`
   });
 });
 
