@@ -8,7 +8,7 @@ app.get('/', (c) => {
 
 app.get('/json', (c) => {
   return c.json({
-    'message': 'Hello Hono!'
+    'message': 'Hello Json!'
   });
 });
 
